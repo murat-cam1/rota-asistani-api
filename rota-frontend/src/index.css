@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* index.css - EN ALTA EKLE */
+
+/* Tüm kartları zorla şekillendir */
+.card {
+  width: 280px !important;
+  background: white !important;
+  border-radius: 20px !important;
+  /* Başlangıçta şeffaf kenarlık (zıplamayı önler) */
+  border: 3px solid transparent !important; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease-in-out !important;
+  box-sizing: border-box !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+/* Üzerine gelince (Hover) ne olsun? */
+.card:hover {
+  /* Kartı biraz küçült */
+  transform: scale(0.95) !important; 
+  /* O istediğin turkuaz kenarlığı ekle */
+  border: 3px solid #00c2cb !important; 
+  /* Gölgeyi içeri çek */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1) !important;
+}
+
+/* Resim ve içerik ayarları */
+.card-img {
+  border-radius: 15px !important;
+}
+
+.btn-action {
+  transition: all 0.2s !important;
+}

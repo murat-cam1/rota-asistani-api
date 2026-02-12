@@ -1,0 +1,80 @@
+/* App.css - SIFIRDAN GÜNCEL KOD */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  text-align: center;
+  color: #1a4d6e;
+  margin-bottom: 40px;
+}
+
+/* KART DÜZENİ */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* --- KARTIN NORMAL HALİ --- */
+.card {
+  width: 280px !important;
+  background: #ffffff !important;
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08) !important;
+  cursor: pointer !important;
+  display: flex !important;
+  flex-direction: column !important;
+  box-sizing: border-box !important;
+  
+  /* Geçişlerin yumuşak olması için */
+  transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease !important;
+  
+  /* Başlangıçta görünmez kenarlık (kartın zıplamasını önler) */
+  border: 3px solid transparent !important;
+}
+
+/* --- KARTIN HOVER (ÜZERİNE GELİNCE) HALİ --- */
+.card:hover { 
+  /* Kartı küçültür */
+  transform: scale(0.95) !important; 
+  
+  /* Akula Holiday Turkuaz Kenarlık */
+  border: 3px solid #00c2cb !important; 
+  
+  /* Gölgeyi hafifletip içeri çökme hissi verir */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1) !important;
+}
+
+/* İÇERİK TASARIMI */
+.card-image-container { height: 180px; position: relative; padding: 12px; }
+.card-img { width: 100%; height: 100%; object-fit: cover; border-radius: 15px; }
+
+.card-content { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
+.card-title { font-size: 16px; color: #1a4d6e; font-weight: 600; margin-bottom: 12px; height: 40px; }
+.card-info { font-size: 13px; color: #666; display: flex; justify-content: space-between; margin-bottom: 15px; }
+
+.btn-action {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-add { background: #f0fdfa; color: #00c2cb; border-color: #00c2cb; }
+.btn-remove { background: #fef2f2; color: #ef4444; border-color: #ef4444; }
