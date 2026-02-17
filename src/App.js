@@ -324,6 +324,22 @@ function App() {
             </div>
           );
       })}
+
+      <footer className="footer">
+        <div className="flex-direction: row; gap: 10px; align-items: center;">
+            <span style={{fontWeight:'800', color:'#38bdf8'}}>ANTALYA ROTA ASİSTANI</span>
+            <div className="divider"></div>
+            <span> Rotaasistanı </span>
+        </div>
+        
+        <div className="footer-right">
+            <span>2026</span>
+            <div className="divider"></div>
+            <span>Kepez / Antalya</span>
+            <div className="divider"></div>
+            <a href="#" className="footer-link"> Rotaasistanı © Tüm hakları saklıdır.</a>
+        </div>
+      </footer>
     </div>
   );
 }
